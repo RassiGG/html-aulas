@@ -1,0 +1,17 @@
+body{
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.gifhover{
+
+content: url("steve.gif");
+transition: 0.03s;
+
+}
+
+.gifhover:hover{
+
+    content: url("cachorro.gif");
+}
