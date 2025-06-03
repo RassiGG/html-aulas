@@ -1,0 +1,38 @@
+body{
+    background-color: aliceblue;
+
+}
+
+.estrutura{
+    margin: 0 auto;
+    width: 750px;
+
+}
+
+.topo{
+    height: 200px;
+    background-color: aqua;
+}
+.menu{
+    height: 50px;
+    background-color: blueviolet;
+}
+
+.esquerda{
+    width: 150px;
+    float: left;
+    background-color: blue;
+}
+.direita{
+    width: 600px;
+    float: left;
+    background-color: white;
+}
+
+.rodape{
+    background-color: antiquewhite;
+}
+/* GLOBAIS */
+.limpa{
+    clear:both
+}

@@ -1,0 +1,31 @@
+#paginahome{
+    background-color: beige;
+    border: solid red 2px;
+    width: 1200px;
+    margin: auto;
+}
+
+#paginahome header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#paginahome section{
+    height: 500px;
+    width: 100%;
+}
+
+#paginahome section nav{
+    background-color: yellow;
+    width: 140px;
+    float: left;
+    height: 500px;
+}
+
+#paginahome section #Paginacentral{
+    background-color: red;
+    width: 1060px;
+    float: right;
+    height: 500px;
+}
