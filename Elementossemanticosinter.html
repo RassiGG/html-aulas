@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos semanticos - interna</title>
+    <style>
+        body{
+            width: 960px;
+            margin: 15px auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header, section, footer{
+            border-style: dotted;
+            border-width: thin;
+            border-color: red;
+        }
+
+        header#pageHeader{
+            width: 100%;
+        }
+        section header{
+            border: none;
+            border-bottom-style: solid;
+            border-bottom-width: thin;
+        }
+        header#pageHeader nav ul, #pageFooter nav ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            padding: 0px;
+        }
+
+        p{
+            margin: 0 0 20px 15px;
+
+        }
+        p, li{
+            line-height: 20px;
+        }
+        #pageHeader nav ul li, #pageFooter nav ul li{
+            padding: 0;
+            margin: 0 20px 0 0;
+            display: inline;
+
+        }
+
+        section#sidebar{
+            float: left;
+            width: 25%;
+        }
+
+        section#post{
+            float: left;
+            width: 74%;
+
+        }
+
+        footer#pageFooter{
+            clear: both;
+            width: 100%;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+    <header id="pageHeader">
+    <h2>Elementos semanticos em HTML5 E CSS3</h2>
+    <h3>Com conteudo interno</h3>  
+    <p>Exemplo de uso semantico</p>
+    <nav id="menuPrincipal">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Post mais recentes</a></li>
+            <li><a href="#">Arquivo</a></li>
+            <li><a href="#">COntato</a></li>
+        </ul>
+
+    </nav>  
+    </header>
+    <section id="sidebar">
+        <nav>
+            <h3>Categorias</h3>
+            <ul>
+                <li><a href="categoria?cat=1">Categoria 1</a></li>
+                     <li><a href="categoria?cat=1">Categoria 2</a></li>
+                      <li><a href="categoria?cat=1">Categoria 3</a></li>
+                      <li><a href="categoria?cat=1">Categoria 3</a></li>
+                      <li><a href="categoria?cat=1">Categoria 4</a></li>
+                      <li><a href="categoria?cat=1">Categoria 5</a></li>
+                      <li><a href="categoria?cat=1">Categoria 6</a></li>
+
+            </ul>
+        </nav>
+    </section>
+<section id="posts">
+    <article id="1502" class="post">
+            <header>
+                <h3>Conteudo desconteudado</h3>
+                <p>Publicado por ACSG <time datetime="2018-08-26"> 26 de outubro de 2019</time></p>
+            </header>
+            <p>
+                NO HTML5 VC PODE FAZER VARIAS COISAS QUE VOCE FICA COM SONO
+            </p>
+            <footer>
+                <p><a href="coments?post=1502"></a></p>
+
+            </footer>
+    </article>
+
+</section>
+<footer id="pageFooter">
+<p>&copy; 2019 - ACSG</p>
+<nav id="menuRodape">
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+        <li><a href="#">Termos de uso</a></li>
+        <li><a href="#">Politica de privacidade</a></li>
+
+    </ul>
+</nav>
+</footer>
+</body>
+</html>
