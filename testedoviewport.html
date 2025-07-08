@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"]{
+            float: left;
+            padding: 15px;
+
+        }
+
+        html{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .header{
+            background-color: blue;
+            color: aliceblue;
+            padding: 15px;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li{
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: aquamarine;
+            color: chartreuse;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+        }
+
+        .menu li:hover{
+            background-color: darkgray;
+
+
+        }
+
+        .aside{
+            background-color: fuchsia;
+            padding: 15px;
+            color: aliceblue;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+        }
+
+        .footer{
+            background-color: antiquewhite;
+            color: aliceblue;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"]{
+            width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+ /* For tablets: */
+ .col-s-1 {width: 8.33%;}
+ .col-s-2 {width: 16.66%;}
+ .col-s-3 {width: 25%;}
+ .col-s-4 {width: 33.33%;}
+ .col-s-5 {width: 41.66%;}
+ .col-s-6 {width: 50%;}
+ .col-s-7 {width: 58.33%;}
+ .col-s-8 {width: 66.66%;}
+ .col-s-9 {width: 75%;}
+ .col-s-10 {width: 83.33%;}
+ .col-s-11 {width: 91.66%;}
+ .col-s-12 {width: 100%;}
+ }
+ @media only screen and (min-width: 768px) {
+ /* For desktop: */
+ .col-1 {width: 8.33%;}
+ .col-2 {width: 16.66%;}
+ .col-3 {width: 25%;}
+ .col-4 {width: 33.33%;}
+ .col-5 {width: 41.66%;}
+ .col-6 {width: 50%;}
+ .col-7 {width: 58.33%;}
+ .col-8 {width: 66.66%;}
+ .col-9 {width: 75%;}
+ .col-10 {width: 83.33%;}
+ .col-11 {width: 91.66%;}
+ .col-12 {width: 100%;}
+ }
+
+
+    </style>
+    <title>TESTE DE viewport</title>
+</head>
+<body>
+    <div class="header"> 
+        <h1>Chania </h1></div>
+        <div class="row">
+    <div class="col-3 col-s-3 menu"> 
+        <ul>
+            <li> The flight</li>
+            <li>The city</li>
+            <li>The island</li>
+            <li>The food</li>
+        </ul>
+    </div>
+    <div class="col-6 col-s-9">
+        <h1>The city</h1>
+        <p>Chania is the capital of chania</p>
+    </div>
+    <div class="col-3 col-s-12">
+        <div class="aside"> 
+            <h2>What</h2>
+            <p>Chaniablablabla</p>
+            <h2>where?</h2>
+            <p>criar bla bla greek island</p>
+            <h2>how?</h2>
+            <p>you can reach the amazing chania airport</p>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>resize the browser window</p>
+    </div>
+</body>
+</html>
